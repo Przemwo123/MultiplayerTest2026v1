@@ -57,12 +57,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/8122e403761dc17d81ed70e18166b550.loader.js";
+      var loaderUrl = buildUrl + "/9e2d855007cb76670398b8c6f18369ff.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/75d56d18aa7cc5ff88532c76cb52f200.data.unityweb",
-        frameworkUrl: buildUrl + "/047173ea4faed7d975214a4c3230152d.framework.js.unityweb",
-        codeUrl: buildUrl + "/dbc954fe62fa2d3acb9230c06f4e878f.wasm.unityweb",
+        dataUrl: buildUrl + "/64eaebda328717a1f6b7e6ae049a0c50.data.unityweb",
+        frameworkUrl: buildUrl + "/9182b3b38d5b319a819c1ffbe5931115.framework.js.unityweb",
+        codeUrl: buildUrl + "/98e7684d6d6ca79e132588a369461655.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
 
         // If you have a custom web site structure, or want to place multiple Unity build instances on the same page,
@@ -135,7 +135,7 @@
           }
         }).then((unityInstance) => {
                 document.querySelector("#unity-fullscreen-button").onclick = () => {
-                  unityInstance.SetFullscreen(1);
+                  document.makeFullscreen('unity-container');
                 };
 
               }).catch((message) => {
